@@ -15,7 +15,7 @@ def scrape_table(doc, comment_url)
     # Show  Number  Submitted  Details
     tds = tr.search('td')
     h = tds.map{|td| td.inner_html}
-  
+
     record = {
       'info_url' => (doc.uri + tds[0].at('a')['href']).to_s,
       'comment_url' => comment_url + CGI::escape("Development Application Enquiry: " + clean_whitespace(h[1])),
