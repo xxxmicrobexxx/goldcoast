@@ -3,7 +3,7 @@ require 'rubygems'
 require 'mechanize'
 
 starting_url = 'http://pdonline.goldcoast.qld.gov.au/masterview/modules/ApplicationMaster/default.aspx?page=found&1=thismonth&4a=BLD%27,%27MCU%27,%27OPW%27,%27ROL&6=F'
-comment_url = 'mailto:council@goldcoast.qld.gov.au?subject='
+comment_url = 'mailto:mail@goldcoast.qld.gov.au?subject='
 
 def clean_whitespace(a)
   a.gsub("\r", ' ').gsub("\n", ' ').squeeze(" ").strip
